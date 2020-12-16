@@ -5,7 +5,7 @@
 	$db = 'tgcn';
 	$conn = new mysqli($servername, $username, $password, $db);
 	if ($conn->connect_error) {
-		echo "KO DC";
+		echo $error_sql;
 	}
 	header('Content-Type: application/json; charset=utf-8');
 
